@@ -1,5 +1,6 @@
 print("Tick Tack Toe")
 print("by Wolfboy66")
+print("https://github.com/kquatsch/pyTickTackToe/")
 
 skip = 0  # skip variable
 
