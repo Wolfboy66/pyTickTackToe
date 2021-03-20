@@ -118,13 +118,14 @@ while game(gamedata):
         inp = str.split(inp)
         if len(inp) != 2:
             print("invalid input")
-        else:
-            if int(inp[0]) == 1 or int(inp[0]) == 2 or int(inp[0]) == 3 and \
-                    int(inp[1]) == 1 or int(inp[1]) == 2 or int(inp[1]) == 3:
+        elif int(inp[0]) == 1 or int(inp[0]) == 2 or int(inp[0]) == 3:
+            if int(inp[1]) == 1 or int(inp[1]) == 2 or int(inp[1]) == 3:
                 print("valid input")
                 valid = 1
             else:
                 print("invalid input")
+        else:
+            print("invalid input")
 
         if valid == 1:
             inp1 = inp[0]
