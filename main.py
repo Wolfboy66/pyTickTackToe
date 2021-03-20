@@ -2,17 +2,16 @@ print("Tick Tack Toe")
 print("by Wolfboy66")
 print("https://github.com/kquatsch/pyTickTackToe/")
 
-skip = 0  # skip variable
 
-while skip == 0:  # GameStart
+while True:  # GameStart
 
     x = input("Start a game? (y/n):  ")  # GameStart Question
 
-    if x.lower() == "y" or "yes":  # Start
-        skip = 1
+    if x.lower() in ("y", "yes"):  # Start
         print("starting game")
+        break
 
-    elif x.lower() == "n" or "no":  # Don't start
+    elif x.lower() in ("n", "no"):  # Don't start
         exit("Exiting")
 
     else:  # Invalid input
