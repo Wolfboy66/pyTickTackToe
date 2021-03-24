@@ -1,3 +1,4 @@
+# dont ask me about the names of the vareables
 print("Tick Tack Toe")
 print("by Wolfboy66")
 print("https://github.com/kquatsch/pyTickTackToe/")
@@ -15,13 +16,12 @@ while True:  # GameStart
         exit("Exiting")
 
     else:  # Invalid input
-        print("Not a valid input")
-        print("try again")
-        print("")
+        print("Not a valid input. Try again")
+        print()
 
 gamedata = [0, 0, 0]  # initialise Gamedata
-i = 0
 player = 1
+i = 0
 while i < 3:
     gamedata[i] = [0, 0, 0]
     i += 1
@@ -88,7 +88,6 @@ def win(delzeroo):
 
 
 while game(gamedata):
-    game(gamedata)
     curp = player
     text = "It is player " + str(curp) + " turn. select a place from 3*3:  "
     i4 = 0
@@ -103,6 +102,8 @@ while game(gamedata):
                 line += " X "
             elif int(gsp[i4_1]) == 2:
                 line += " O "
+            else:
+                exit("Message the Administrator: Error: Invalid gamedata")
             if i4_1 < 2:
                 line += " | "
             i4_1 += 1
@@ -120,7 +121,6 @@ while game(gamedata):
             print("invalid input")
         elif int(inp[0]) == 1 or int(inp[0]) == 2 or int(inp[0]) == 3:
             if int(inp[1]) == 1 or int(inp[1]) == 2 or int(inp[1]) == 3:
-                print("valid input")
                 valid = 1
             else:
                 print("invalid input")
