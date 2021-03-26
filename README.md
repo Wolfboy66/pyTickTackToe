@@ -5,4 +5,5 @@ if you want to run it on your own, download or copy paste the text and run it wi
 
 How to play? 
 Look at the Wiki: https://github.com/kquatsch/pyTickTackToe/wiki
+
 A Bug? --> first look at the wiki
