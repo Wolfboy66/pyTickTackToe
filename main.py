@@ -20,11 +20,11 @@ while True:  # GameStart
         print()
 
 
-def setupgame():
-    data = [0, 0, 0]  # initialise Gamedata
+def setupGame():
+    data = [0, 0, 0]  # initialise GameData
     i = 0
     while i < 3:
-        gamedata[i] = [0, 0, 0]
+        data[i] = [0, 0, 0]
         i += 1
     return data
 
@@ -88,7 +88,7 @@ def win(delzeroo):
     return True
 
 
-gamedata = setupgame()
+gamedata = setupGame()
 player = 0
 while game(gamedata):
     curp = player
@@ -106,7 +106,7 @@ while game(gamedata):
             elif int(gsp[i4_1]) == 2:
                 line += " O "
             else:
-                exit("Message the Administrator: Error: Invalid gamedata")
+                exit("Message the Administrator: Error: Invalid GameData")
             if i4_1 < 2:
                 line += " | "
             i4_1 += 1
