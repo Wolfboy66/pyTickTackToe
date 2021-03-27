@@ -140,14 +140,12 @@ while game(gamedata):
                 if s[inp2] == 0:
                     s[inp2] = 1
                 else:
-                    valid = 1
                     print("select an other place")
             else:
                 s = gamedata[inp1]
                 if s[inp2] == 0:
                     s[inp2] = 2
                 else:
-                    valid = 1
                     print("select an other place")
             if player == 1:
                 player = 2
