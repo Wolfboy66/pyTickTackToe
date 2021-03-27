@@ -89,7 +89,7 @@ def win(delzeroo):
 
 
 gamedata = setupGame()
-player = 0
+player = 1
 while game(gamedata):
     curp = player
     text = "It is player " + str(curp) + " turn. select a place from 3*3:  "
