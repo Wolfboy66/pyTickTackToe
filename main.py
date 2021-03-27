@@ -1,4 +1,4 @@
-# dont ask me about the names of the vareables
+# Don't ask me about the names of the Variables
 print("Tick Tack Toe")
 print("by Wolfboy66")
 print("https://github.com/kquatsch/pyTickTackToe/")
@@ -19,12 +19,14 @@ while True:  # GameStart
         print("Not a valid input. Try again")
         print()
 
-gamedata = [0, 0, 0]  # initialise Gamedata
-player = 1
-i = 0
-while i < 3:
-    gamedata[i] = [0, 0, 0]
-    i += 1
+
+def setupgame():
+    data = [0, 0, 0]  # initialise Gamedata
+    i = 0
+    while i < 3:
+        gamedata[i] = [0, 0, 0]
+        i += 1
+    return data
 
 
 def delzero(posible):  # only pass trought full lines
@@ -82,11 +84,12 @@ def win(delzeroo):
             exit("player 1 Won")
         elif (array[0] + array[1] + array[2]) == 6:
             exit("player 2 won")
-        else:
-            return True
+        i3 += 1
     return True
 
 
+gamedata = setupgame()
+player = 0
 while game(gamedata):
     curp = player
     text = "It is player " + str(curp) + " turn. select a place from 3*3:  "
